@@ -12,10 +12,10 @@
   </head>
   <!-- body = informasjon til nettsiden -->
   <body>
-    <header>
+    <header class="header">
       <!-- Logo, bedriftnavn, navigasjon, temabytter, søkefelt, SoMe -->
-      <nav>
-        <ul>
+      <nav class="nav">
+        <ul class="navList">
           <li>
             <a href="#hjem">Hjem</a>
           </li>
@@ -46,30 +46,41 @@
           alt="Fjell i svart hvit"
         />
       </section>
-      <section id="om">
-        <h2>Kort om meg</h2>
-        <p>Mine favoritt spill</p>
-        <ul>
-          <li>The Elder Scrolls: Skyrim</li>
-          <li>No man sky</li>
-          <li>Sims 4</li>
-          <li>Stardew Valley</li>
-        </ul>
 
-        <p>Mine favoritt bøker</p>
-        <ul>
-          <li>The Hobbit by J.R. Tokien</li>
-          <li>Mistborn series by Brandon Sanderson</li>
-          <li>Game of Thrones series by George R. Martin</li>
-        </ul>
+      <section id="om" class="about">
+        <!-- section har to barn h2 og div for å separere overskrift og innhold -->
+        <h2>Kort om meg</h2>
+
+        <div class="favoriteLists">
+          <!-- div har to barn div og div for å separere overskrift og liste-->
+          <div>
+            <h3>Mine favoritt spill</h3>
+            <ul>
+              <li>The Elder Scrolls: Skyrim</li>
+              <li>No man sky</li>
+              <li>Sims 4</li>
+              <li>Stardew Valley</li>
+            </ul>
+          </div>
+  
+        <div>
+          <h3>Mine favoritt bøker</h3>
+          <ul>
+            <li>The Hobbit by J.R. Tokien</li>
+            <li>Mistborn series by Brandon Sanderson</li>
+            <li>Game of Thrones series by George R. Martin</li>
+          </ul>
+        </div>
+        </div>
       </section>
-      <section id="produkt">
+
+      <section id="produkt" class="product">
         <h2>Enda kortere om mine prosjekter</h2>
         <p>Jeg har ingen prosjekter enda, men de kommer bare vent!</p>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <!-- Logo, navigasjon, kreditasjon, ToS, søkefelt, SoMe -->
       <h3>Laget av Julie Hauge</h3>
     </footer>

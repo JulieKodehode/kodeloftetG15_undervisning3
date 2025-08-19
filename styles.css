@@ -4,13 +4,19 @@ body {
   /* CSS Rule = property:value;*/
   /* CSS Property = background-color */
   /* CSS Value = red */
-  background-color: red;
-  padding: 8px;
-  border: 4px black solid;
+  margin: 0px; /* Ingen mellomrom mellom skjerm kant */
+}
 
-  border-width: 4px;
-  border-color: black;
-  border-style: solid;
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid black;
+}
+
+/* Bruker element-navn fordi jeg vil det skal gjelde på alle selector-element */
+section {
+  height: 100vh;
 }
 
 .hero {
@@ -21,7 +27,46 @@ body {
   gap: 25px;
 }
 
+/* Bruker element-navn fordi det kun er et bilde på denne siden. Ved flere bilder bruk klasse-navn */
 img {
   height: 300px;
   width: 300px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.favoriteLists {
+  display: flex;
+  gap: 16px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
