@@ -1,0 +1,27 @@
+/* CSS Selector = body */
+body {
+  /* CSS Declaration = {} */
+  /* CSS Rule = property:value;*/
+  /* CSS Property = background-color */
+  /* CSS Value = red */
+  background-color: red;
+  padding: 8px;
+  border: 4px black solid;
+
+  border-width: 4px;
+  border-color: black;
+  border-style: solid;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row; /* Kommer autmatisk. Kun for visuel tyding */
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
